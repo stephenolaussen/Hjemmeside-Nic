@@ -71,3 +71,5 @@ $(function() {
 $('#name').focus(function() {
     $('#success').html('');
 });
+
+console.log(´contact_me.js loaded´);
