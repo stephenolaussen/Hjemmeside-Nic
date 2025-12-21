@@ -15,7 +15,20 @@
     // Highlight the top nav as scrolling occurs
     $('body').scrollspy({
         target: '.navbar-fixed-top',
-        offset: 51
+        offset: 200
+    });
+    
+    // If at bottom of page, highlight KONTAKT
+    $(window).on('scroll', function() {
+        var scrollTop = $(window).scrollTop();
+        var docHeight = $(document).height();
+        var windowHeight = $(window).height();
+        
+        // If we've scrolled to near the bottom (within 500px), highlight KONTAKT
+        if ((scrollTop + windowHeight) >= (docHeight - 500)) {
+            $('.navbar-nav li').removeClass('active');
+            $('.navbar-nav a[href="#kontakt"]').closest('li').addClass('active');
+        }
     });
 
     // Closes the Responsive Menu on Menu Item Click
