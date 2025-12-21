@@ -255,7 +255,7 @@
                 </div>
                 <div class="col-lg-8 col-lg-offset-2 text-center" style="margin-top: 30px;">
                     <a href="#kontakt" class="btn btn-lg btn-outline page-scroll">
-                        <i class="fa fa-shield"></i> Les mer om Takansvar Garanti. Vil du ha dette Nic? <i class="fa fa-home" style="margin-left: 8px;"></i>
+                        <i class="fa fa-shield"></i> Les mer om Takansvar Garanti.<i class="fa fa-home" style="margin-left: 8px;"></i>
                     </a>
                 </div>
             </div>
@@ -281,7 +281,7 @@
                     </button>
                 </div>
                 <div class="col-md-6 text-center">
-                    <button id="kontaktSpmBtn" class="btn btn-lg btn-success" style="margin: 10px; transition: transform 0.2s;">
+                    <button id="kontaktSpmBtn" class="btn btn-lg btn-primary" style="margin: 10px; transition: transform 0.2s;">
                         <i class="fa fa-phone"></i> Bli kontaktet for spørsmål <i class="fa fa-home" style="margin-left: 8px;"></i>
                     </button>
                 </div>
@@ -301,7 +301,7 @@
                                 <h4 class="modal-title" id="kontaktSpmModalLabel">Bli kontaktet for spørsmål</h4>
                             </div>
                             <div class="modal-body">
-                                <form id="kontaktSpmForm">
+                                <form id="kontaktSpmForm" action="mailto:kontakt@takansvar.no" method="POST" enctype="text/plain">
                                     <div class="form-group">
                                         <label for="kontaktSpmNavn">Navn</label>
                                         <input type="text" class="form-control" id="kontaktSpmNavn" name="navn" required>
@@ -332,7 +332,7 @@
                         <h4 class="modal-title" id="taksjekkModalLabel">Bestill gratis taksjekk</h4>
                     </div>
                     <div class="modal-body">
-                        <form id="taksjekkForm">
+                        <form id="taksjekkForm" action="mailto:salg@takansvar.no" method="POST" enctype="text/plain">
                             <div class="form-group">
                                 <label for="taksjekkNavn">Navn</label>
                                 <input type="text" class="form-control" id="taksjekkNavn" name="navn" required>
