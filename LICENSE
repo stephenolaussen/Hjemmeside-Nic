@@ -1,23 +1,28 @@
 
-The MIT License (MIT)
+PROPRIETARY LICENSE
 
-Copyright (c) 2013-2016 Blackrock Digital LLC.
-Copyright (c) 2016-2017 The WebOps Club.
+Takansvar AS is hereby the owner of this website.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+This website is based on the Freelancer Bootstrap theme, which is licensed under the MIT License.
+The original template code is subject to the MIT License.
 
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
+However, the custom code, content, and modifications developed for Takansvar AS are proprietary and confidential.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
+TERMS:
+
+1. You are permitted to use and modify the underlying Freelancer Bootstrap template for your own purposes, in accordance with its original MIT License.
+
+2. You are NOT permitted to use, copy, reproduce, distribute, or modify the custom code, content, designs, or any original work created for Takansvar AS without explicit written permission.
+
+3. This includes but is not limited to:
+   - Custom JavaScript in js/contact_me.js and index.js
+   - Content and text specific to Takansvar AS
+   - Custom styling and design modifications
+   - Images and portfolio content
+   - Any business logic or functionality unique to this website
+
+4. Redistribution of this website or its modifications is not permitted without consent from Takansvar AS.
+
+For inquiries regarding licensing or use of custom code, please contact the copyright holder.
+
+Copyright (c) 2024 Takansvar AS. All rights reserved.
