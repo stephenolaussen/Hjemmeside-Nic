@@ -30,13 +30,19 @@
                         const adresse = document.getElementById('taksjekkAdresse').value;
                         const email = document.getElementById('taksjekkEmail').value;
                         
-                        // Bygg mailto URL med skjemadata
+                        // Sanitize inputs to prevent injection attacks
+                        const sanitizedNavn = DOMPurify.sanitize(navn, {ALLOWED_TAGS: [], ALLOWED_ATTR: []});
+                        const sanitizedTelefon = DOMPurify.sanitize(telefon, {ALLOWED_TAGS: [], ALLOWED_ATTR: []});
+                        const sanitizedAdresse = DOMPurify.sanitize(adresse, {ALLOWED_TAGS: [], ALLOWED_ATTR: []});
+                        const sanitizedEmail = DOMPurify.sanitize(email, {ALLOWED_TAGS: [], ALLOWED_ATTR: []});
+                        
+                        // Bygg mailto URL med sanitisert data
                         const subject = encodeURIComponent('Bestilling av gratis taksjekk');
                         const body = encodeURIComponent(
-                            'Navn: ' + navn + '\n' +
-                            'Telefon: ' + telefon + '\n' +
-                            'Adresse: ' + adresse + '\n' +
-                            'E-post: ' + email
+                            'Navn: ' + sanitizedNavn + '\n' +
+                            'Telefon: ' + sanitizedTelefon + '\n' +
+                            'Adresse: ' + sanitizedAdresse + '\n' +
+                            'E-post: ' + sanitizedEmail
                         );
                         const mailtoURL = 'mailto:salg@takansvar.no?subject=' + subject + '&body=' + body;
                         
@@ -72,12 +78,17 @@
                         const telefon = document.getElementById('kontaktSpmTelefon').value;
                         const email = document.getElementById('kontaktSpmEmail').value;
                         
-                        // Bygg mailto URL med skjemadata
+                        // Sanitize inputs to prevent injection attacks
+                        const sanitizedNavn = DOMPurify.sanitize(navn, {ALLOWED_TAGS: [], ALLOWED_ATTR: []});
+                        const sanitizedTelefon = DOMPurify.sanitize(telefon, {ALLOWED_TAGS: [], ALLOWED_ATTR: []});
+                        const sanitizedEmail = DOMPurify.sanitize(email, {ALLOWED_TAGS: [], ALLOWED_ATTR: []});
+                        
+                        // Bygg mailto URL med sanitisert data
                         const subject = encodeURIComponent('Forespørsel - Bli kontaktet');
                         const body = encodeURIComponent(
-                            'Navn: ' + navn + '\n' +
-                            'Telefon: ' + telefon + '\n' +
-                            'E-post: ' + email
+                            'Navn: ' + sanitizedNavn + '\n' +
+                            'Telefon: ' + sanitizedTelefon + '\n' +
+                            'E-post: ' + sanitizedEmail
                         );
                         const mailtoURL = 'mailto:kontakt@takansvar.no?subject=' + subject + '&body=' + body;
                         
